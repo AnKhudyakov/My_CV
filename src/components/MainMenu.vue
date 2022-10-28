@@ -42,15 +42,24 @@ export default {
   },
   methods: {
     ActiveCurrent(event) {
-      if (event.target.innerHTML === 'About Me') {
+      if (
+        event.target.innerHTML === 'About Me' ||
+        event.target.innerHTML === 'Обо мне'
+      ) {
         this.ActiveAbout = 'active';
         this.ActiveResume = '';
         this.ActiveContacts = '';
-      } else if (event.target.innerHTML === 'Contacts') {
+      } else if (
+        event.target.innerHTML === 'Contacts' ||
+        event.target.innerHTML === 'Контакты'
+      ) {
         this.ActiveContacts = 'active';
         this.ActiveResume = '';
         this.ActiveAbout = '';
-      } else if (event.target.innerHTML === 'Resume') {
+      } else if (
+        event.target.innerHTML === 'Resume' ||
+        event.target.innerHTML === 'Резюме'
+      ) {
         this.ActiveResume = 'active';
         this.ActiveContacts = '';
         this.ActiveAbout = '';
