@@ -19,13 +19,16 @@ import MobileHeader from './components/MobileHeader.vue';
 
 <style scoped>
 header {
+  position: relative;
   display: block;
 }
 .page {
+  position: relative;
   padding-left: 160px;
   width: 100%;
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 .slide-page-enter-active {
   transition: all 0.7s ease-out;

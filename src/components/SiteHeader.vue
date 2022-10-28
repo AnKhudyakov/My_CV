@@ -4,16 +4,19 @@
       <Logo></Logo>
     </div>
     <MainMenu @newClick="Redirect"></MainMenu>
+    <Languages></Languages>
   </div>
 </template>
 
 <script>
+import Languages from './Languages.vue';
 import MainMenu from './MainMenu.vue';
 import Logo from './Logo.vue';
 export default {
   components: {
     MainMenu,
     Logo,
+    Languages,
   },
   methods: {
     Redirect() {
@@ -43,7 +46,6 @@ export default {
   background-color: #fff;
   overflow: auto;
   z-index: 1002;
-  /* visibility: visible; */
 }
 @media only screen and (max-width: 991px) {
   .mobile-hidden {

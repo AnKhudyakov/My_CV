@@ -2,26 +2,37 @@
   <div class="page-resume">
     <div class="resume">
       <div class="section-title">
-        <h2>Резюме</h2>
+        <h2 v-if="$store.state.languages == 'eng'">Resume</h2>
+        <h2 v-if="$store.state.languages == 'ru'">Резюме</h2>
       </div>
       <div class="main-section">
         <div class="expirience">
           <div class="block-title">
-            <h3>Опыт работы</h3>
+            <h3 v-if="$store.state.languages == 'eng'">Experience</h3>
+            <h3 v-if="$store.state.languages == 'ru'">Опыт работы</h3>
           </div>
           <div class="content">
-            <ResumeItem :items="items"></ResumeItem>
+            <ResumeItem
+              v-if="$store.state.languages == 'eng'"
+              :items="items"
+            ></ResumeItem>
+            <ResumeItem
+              v-if="$store.state.languages == 'ru'"
+              :items="itemsRu"
+            ></ResumeItem>
           </div>
         </div>
         <div class="skills">
           <div class="block-title">
-            <h3>Ключевые навыки</h3>
+            <h3 v-if="$store.state.languages == 'eng'">Skills</h3>
+            <h3 v-if="$store.state.languages == 'ru'">Ключевые навыки</h3>
           </div>
           <div class="content-skills">
             <SkillsItem :skills="skills"></SkillsItem>
           </div>
           <div class="block-title">
-            <h3>Иностранные языки</h3>
+            <h3 v-if="$store.state.languages == 'eng'">Foreign languages</h3>
+            <h3 v-if="$store.state.languages == 'ru'">Иностранные языки</h3>
           </div>
           <div class="content-skills">
             <SkillsItem :skills="languages"></SkillsItem>
@@ -35,6 +46,7 @@
 <script>
 import ResumeItem from '../components/ResumeItem.vue';
 import SkillsItem from '../components/SkillsItem.vue';
+import store from '../store';
 export default {
   components: {
     ResumeItem,
@@ -43,6 +55,32 @@ export default {
   data() {
     return {
       items: [
+        {
+          company: '"Vemina Aviaprestige"',
+          time: 'April 19 - January 20',
+          status: 'Senior Design Engineer',
+          resp: 'VeminaSecond',
+        },
+        {
+          company: '"Anotech Energy"',
+          time: 'May 18 - March 19',
+          status: 'Lead Design Engineer',
+          resp: 'Anotech',
+        },
+        {
+          company: '"Vemina Aviaprestige"',
+          time: 'April 13 - May 18',
+          status: 'Design Engineer',
+          resp: 'VeminaFirst',
+        },
+        {
+          company: '"Progresstech"',
+          time: 'January 12 - April 13',
+          status: 'Design Engineer',
+          resp: 'Progresstech',
+        },
+      ],
+      itemsRu: [
         {
           company: 'ООО "Вемина Авиапрестиж"',
           time: 'Апрель 19 - Январь 20',
@@ -75,7 +113,8 @@ export default {
         { name: 'Git', percentage: 'skill-80' },
         { name: 'SQL', percentage: 'skill-90' },
       ],
-      languages: [{ name: 'Английский', percentage: 'skill-60' }],
+      languages: [{ name: 'English', percentage: 'skill-60' }],
+      store,
     };
   },
 };
@@ -87,12 +126,13 @@ export default {
   height: 100%;
   background-color: #f5f5f5;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .resume {
   position: relative;
   padding: 50px;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   margin-left: 15px;
   background-color: #fff;
 }
@@ -125,6 +165,9 @@ export default {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+  }
+  .resume {
+    padding: 30px;
   }
 }
 </style>

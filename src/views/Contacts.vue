@@ -1,7 +1,8 @@
 <template>
   <div class="page-contacts">
     <div class="contacts">
-      <h2>Контакты</h2>
+      <h2 v-show="$store.state.languages == 'eng'">Contacts</h2>
+      <h2 v-show="$store.state.languages == 'ru'">Контакты</h2>
     </div>
     <div class="mail">
       <a href="mailto:khandrewv@gmail.com" target="_blank">
@@ -30,7 +31,16 @@
   </div>
 </template>
 
-<script setup></script>
+<script>
+import store from '../store';
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+};
+</script>
 
 <style scoped>
 .page-contacts {

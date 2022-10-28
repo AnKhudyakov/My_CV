@@ -1,6 +1,18 @@
-<script setup>
+<script>
 import Home from '../components/Home.vue';
 import Main from '../components/Main.vue';
+import store from '../store';
+export default {
+  data() {
+    return {
+      store,
+    };
+  },
+  components: {
+    Main,
+    Home,
+  },
+};
 </script>
 
 <template>
@@ -8,7 +20,10 @@ import Main from '../components/Main.vue';
     <div class="avatar"></div>
 
     <div class="text-block">
-      <Main msg="Андрей Худяков"> </Main>
+      <Main msg="Andrey Khudyakov" v-show="$store.state.languages == 'eng'">
+      </Main>
+      <Main msg="Андрей Худяков" v-show="$store.state.languages == 'ru'">
+      </Main>
     </div>
     <div class="changeable">
       <Home />
@@ -26,6 +41,7 @@ import Main from '../components/Main.vue';
   height: 100%;
   z-index: 1001;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .avatar {

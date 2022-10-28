@@ -4,6 +4,7 @@
       <div class="logo-mobile">
         <Logo class="logo-img"></Logo>
       </div>
+      <Languages></Languages>
       <div class="mobile-menu">
         <a
           class="link"
@@ -11,15 +12,15 @@
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
-          @click="show = !show"
+          @click="$store.state.show = !$store.state.show"
         >
           <img src="../assets/list.svg" alt="list" class="menu-toggle" />
         </a>
         <Transition name="slide-siteHeader">
           <SiteHeader
             class="show-siteHeader"
-            @newClick="show = !show"
-            v-show="show"
+            @click="$store.state.show = !$store.state.show"
+            v-show="$store.state.show"
           ></SiteHeader>
         </Transition>
       </div>
@@ -30,14 +31,17 @@
 <script>
 import Logo from './Logo.vue';
 import SiteHeader from './SiteHeader.vue';
+import Languages from './Languages.vue';
+import store from '../store';
 export default {
   components: {
     SiteHeader,
     Logo,
+    Languages,
   },
   data() {
     return {
-      show: false,
+      store,
       ChangeClass: 'hide-siteHeader',
     };
   },
@@ -66,22 +70,23 @@ export default {
 .contain-mobile-header {
   display: flex;
   flex-direction: row;
-  width: 100%;
   height: 100%;
-  justify-content: space-between;
+  width: 100%;
 }
+
 .mobile-menu .logo-mobile {
   display: flex;
   align-content: center;
   justify-items: center;
-  width: 100px;
-  height: 80%;
+  width: 85px;
+  height: 100%;
 }
+
 .link,
 .menu-toggle {
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 0;
 }
 .slide-siteHeader-enter-active {
   transition: all 0.5s ease-out;

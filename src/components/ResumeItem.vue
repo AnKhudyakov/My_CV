@@ -10,8 +10,8 @@
     <div class="right-part">
       <h4>{{ item.status }}</h4>
       <VeminaSecond v-if="item.resp === 'VeminaSecond'"></VeminaSecond>
-      <VeminaFirst></VeminaFirst>
-      <Progresstech></Progresstech>
+      <VeminaFirst v-if="item.resp === 'VeminaFirst'"></VeminaFirst>
+      <Progresstech v-if="item.resp === 'Progresstech'"></Progresstech>
       <Anotech v-if="item.resp === 'Anotech'"></Anotech>
     </div>
   </div>
@@ -40,12 +40,23 @@ export default {
 <style scoped>
 .item {
   display: grid;
-  grid-template-columns: 1fr 0.5fr 2fr;
+  grid-template-columns: 1fr 0.1fr 2fr;
   margin-bottom: 15px;
+  height: fit-content;
 }
 .line {
   width: 50%;
   height: 100%;
   border-right: 3px solid #f5f5f5;
+}
+.right-part {
+  padding: 0 10px 0 20px;
+  overflow-y: none;
+}
+.blank {
+  margin: 0 5px 0 5px;
+}
+.left-part {
+  min-width: 125px;
 }
 </style>
