@@ -23,7 +23,7 @@ export default {
       Front-End Developer with a proven ability to adapt in both self-starting
       and collaborative environments while staying focused on achieving
       high-quality resultsunder strict deadlines. Proficient with JavaScript,
-      HTML5, CSS, Vue.js.
+      HTML5, CSS, Vue.js, ReactJS.
     </p>
     <h4 v-if="$store.state.languages == 'ru'">
       Front-End разработчик (junior)

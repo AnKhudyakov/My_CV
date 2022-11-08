@@ -112,6 +112,7 @@ export default {
         { name: 'Vue.js', percentage: 'skill-60' },
         { name: 'Git', percentage: 'skill-80' },
         { name: 'SQL', percentage: 'skill-90' },
+        { name: 'ReactJS', percentage: 'skill-60' },
       ],
       languages: [{ name: 'English', percentage: 'skill-60' }],
       store,
