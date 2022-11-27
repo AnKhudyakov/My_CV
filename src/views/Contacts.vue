@@ -28,11 +28,25 @@
         </div>
       </a>
     </div>
+    <div class="phone">
+      <a href="https://t.me/AndrewvKh" target="_blank">
+        <div class="lm-info-block">
+          <i>
+            <img
+              src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"
+              alt="telegram"
+              class="telegram"
+            />
+          </i>
+          <h4>@AndrewvKh</h4>
+        </div>
+      </a>
+    </div>
   </div>
 </template>
 
 <script>
-import store from '../store';
+import store from "../store";
 export default {
   data() {
     return {
@@ -90,6 +104,11 @@ export default {
 .envelope {
   scale: 2.5;
 }
+
+.telegram {
+  scale: 1;
+}
+
 @media only screen and (max-width: 991px) {
   .page-contacts {
     margin-left: 0;
