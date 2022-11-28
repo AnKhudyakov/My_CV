@@ -1,7 +1,7 @@
 <template>
   <div class="languages">
     <div class="container_lang">
-      <div>
+      <div v-if="$store.state.languages == 'ru'">
         <a
           class="row"
           href="#"
@@ -13,7 +13,7 @@
         </a>
       </div>
 
-      <div>
+      <div v-if="$store.state.languages == 'eng'">
         <a
           class="row"
           href="#"
@@ -29,9 +29,9 @@
 </template>
 
 <script>
-import Eng from './icons/eng.vue';
-import Ru from './icons/ru.vue';
-import store from '../store';
+import Eng from "./icons/eng.vue";
+import Ru from "./icons/ru.vue";
+import store from "../store";
 export default {
   data() {
     return {
@@ -50,16 +50,17 @@ export default {
 .languages {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: fit-content;
   height: 50px;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
+  margin-left: 35px;
 }
 
 .container_lang {
   display: flex;
   flex-direction: row;
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   justify-content: center;
   align-items: center;

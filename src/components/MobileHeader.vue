@@ -4,7 +4,10 @@
       <div class="logo-mobile">
         <Logo class="logo-img"></Logo>
       </div>
-      <Languages></Languages>
+      <div class="lang">
+        <Languages></Languages>
+      </div>
+
       <div class="mobile-menu">
         <a
           class="link"
@@ -29,10 +32,10 @@
 </template>
 
 <script>
-import Logo from './Logo.vue';
-import SiteHeader from './SiteHeader.vue';
-import Languages from './Languages.vue';
-import store from '../store';
+import Logo from "./Logo.vue";
+import SiteHeader from "./SiteHeader.vue";
+import Languages from "./Languages.vue";
+import store from "../store";
 export default {
   components: {
     SiteHeader,
@@ -42,7 +45,7 @@ export default {
   data() {
     return {
       store,
-      ChangeClass: 'hide-siteHeader',
+      ChangeClass: "hide-siteHeader",
     };
   },
 };
@@ -80,6 +83,12 @@ export default {
   justify-items: center;
   width: 85px;
   height: 100%;
+}
+
+.lang {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .link,
