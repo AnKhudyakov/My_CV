@@ -55,6 +55,12 @@ export default {
   data() {
     return {
       items: [
+      {
+          company: '"SFERA ZONE"',
+          time: 'Oсtober 22 - present',
+          status: 'Frontend-разработчик',
+          resp: 'Sfera',
+        },
         {
           company: '"Vemina Aviaprestige"',
           time: 'April 19 - January 20',
@@ -82,10 +88,10 @@ export default {
       ],
       itemsRu: [
         {
-          company: 'ООО "Вемина Авиапрестиж"',
-          time: 'Апрель 19 - Январь 20',
-          status: 'Главный специалист кострукторского отдела',
-          resp: 'VeminaSecond',
+          company: 'ООО "СФЕРА"',
+          time: 'Октябрь 22 - по настоящее время',
+          status: 'Frontend-разработчик',
+          resp: 'Sfera',
         },
         {
           company: 'АО "Anotech Energy"',

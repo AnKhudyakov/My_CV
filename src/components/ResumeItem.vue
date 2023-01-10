@@ -9,6 +9,7 @@
     </div>
     <div class="right-part">
       <h4>{{ item.status }}</h4>
+      <Sfera v-if="item.resp === 'Sfera'"></Sfera>
       <VeminaSecond v-if="item.resp === 'VeminaSecond'"></VeminaSecond>
       <VeminaFirst v-if="item.resp === 'VeminaFirst'"></VeminaFirst>
       <Progresstech v-if="item.resp === 'Progresstech'"></Progresstech>
@@ -18,16 +19,18 @@
 </template>
 
 <script>
-import VeminaSecond from './items/VeminaSecond.vue';
-import VeminaFirst from './items/VeminaFirst.vue';
-import Progresstech from './items/Progresstech.vue';
-import Anotech from './items/Anotech.vue';
+import VeminaSecond from "./items/VeminaSecond.vue";
+import VeminaFirst from "./items/VeminaFirst.vue";
+import Progresstech from "./items/Progresstech.vue";
+import Anotech from "./items/Anotech.vue";
+import Sfera from "./items/Sfera.vue";
 export default {
   components: {
     VeminaSecond,
     VeminaFirst,
     Progresstech,
     Anotech,
+    Sfera,
   },
   props: {
     items: {
