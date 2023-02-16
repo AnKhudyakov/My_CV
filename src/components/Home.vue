@@ -52,7 +52,7 @@ export default {
     </template>
     <template #heading>About Me</template>
     <p>
-      I have experience in developing a multiservice web application on
+      I have experience in developing a microservices web application on
       stack ReactJS, NextJS, Redux(Toolkit), gRPC, NodeJS, MongoDB. Also developed applications on MERN, PERN
       stacks with
       authorization via JWT/Google Sing In. I have experience with Strapi CMS, Stripe payment system, Material-UI
@@ -73,7 +73,7 @@ export default {
     </template>
     <template #heading>О себе</template>
     <p>
-      Имею опыт разработки мультисервисного wеb-приложения на стеке ReactJS,
+      Имею опыт разработки микросервисного wеb-приложения на стеке ReactJS,
       NextJS, Redux(Toolkit), gRPC, NodeJS, MongoDB. Также разрабатывал
       приложения на стеках MERN, PERN с авторизацией по JWT/Google Sing In. Имею
       опыт работы с CMS Strapi, платежной системой Stripe, библиотекой Material-UI. Работал с AWS (EC2, RDS, S3) , Google Cloud Platform (App Engine, SQL,
