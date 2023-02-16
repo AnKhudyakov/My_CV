@@ -52,12 +52,12 @@ export default {
     </template>
     <template #heading>About Me</template>
     <p>
-      I have experience in developing a full stack multiservice web application
-      with authorization via JWT/Google Sing In and connecting the web client to
-      the server on Node.js by gGPC. Also developed applications on MERN, PERN
-      stacks. I have experience with Strapi CMS, Stripe payment system, Material
-      library ui. I know how to adapt, cross-browser layout. I know
-      React-Redux(Toolkit) on good level.
+      I have experience in developing a multiservice web application on
+      stack ReactJS, NextJS, Redux(Toolkit), gRPC, NodeJS, MongoDB. Also developed applications on MERN, PERN
+      stacks with
+      authorization via JWT/Google Sing In. I have experience with Strapi CMS, Stripe payment system, Material-UI
+      library. I worked with AWS (EC2, RDS, S3) , Google Cloud Platform (App Engine, SQL,
+      Storage). I know how to adapt, cross-browser layout.
     </p>
     <p>Changed pfofession due to a change of interests.</p>
     <p>
@@ -73,12 +73,11 @@ export default {
     </template>
     <template #heading>О себе</template>
     <p>
-      Имею опыт разработки fullstack мультисервисного Wеb-приложения с
-      авторизацией по JWT/Google Sing In и подключением web-клиента к серверу на
-      Node.js по gGPC. Также разрабатывал приложения на стеках MERN, PERN. Имею
-      опыт работы с CMS Strapi, платежной системой Stripe, библиотекой Material
-      UI. Умею адаптивно, кроссбраузерно верстать. Знаю React-Redux(Toolkit) на
-      хорошем уровне.
+      Имею опыт разработки мультисервисного wеb-приложения на стеке ReactJS,
+      NextJS, Redux(Toolkit), gRPC, NodeJS, MongoDB. Также разрабатывал
+      приложения на стеках MERN, PERN с авторизацией по JWT/Google Sing In. Имею
+      опыт работы с CMS Strapi, платежной системой Stripe, библиотекой Material-UI. Работал с AWS (EC2, RDS, S3) , Google Cloud Platform (App Engine, SQL,
+      Storage). Умею адаптивно, кроссбраузерно верстать.
     </p>
     <p>Сменил сферу деятельности в связи со сменой интересов.</p>
     <p>

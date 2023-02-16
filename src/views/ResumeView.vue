@@ -44,9 +44,9 @@
 </template>
 
 <script>
-import ResumeItem from '../components/ResumeItem.vue';
-import SkillsItem from '../components/SkillsItem.vue';
-import store from '../store';
+import ResumeItem from "../components/ResumeItem.vue";
+import SkillsItem from "../components/SkillsItem.vue";
+import store from "../store";
 export default {
   components: {
     ResumeItem,
@@ -55,75 +55,90 @@ export default {
   data() {
     return {
       items: [
-      {
+        {
           company: '"SFERA ZONE"',
-          time: 'Oсtober 22 - present',
-          status: 'Frontend-разработчик',
-          resp: 'Sfera',
+          time: "Oсtober 22 - present",
+          status: "Frontend-разработчик",
+          resp: "Sfera",
         },
         {
           company: '"Vemina Aviaprestige"',
-          time: 'April 19 - January 20',
-          status: 'Senior Design Engineer',
-          resp: 'VeminaSecond',
+          time: "April 19 - January 20",
+          status: "Senior Design Engineer",
+          resp: "VeminaSecond",
         },
         {
           company: '"Anotech Energy"',
-          time: 'May 18 - March 19',
-          status: 'Lead Design Engineer',
-          resp: 'Anotech',
+          time: "May 18 - March 19",
+          status: "Lead Design Engineer",
+          resp: "Anotech",
         },
         {
           company: '"Vemina Aviaprestige"',
-          time: 'April 13 - May 18',
-          status: 'Design Engineer',
-          resp: 'VeminaFirst',
+          time: "April 13 - May 18",
+          status: "Design Engineer",
+          resp: "VeminaFirst",
         },
         {
           company: '"Progresstech"',
-          time: 'January 12 - April 13',
-          status: 'Design Engineer',
-          resp: 'Progresstech',
+          time: "January 12 - April 13",
+          status: "Design Engineer",
+          resp: "Progresstech",
         },
       ],
       itemsRu: [
         {
           company: 'ООО "СФЕРА"',
-          time: 'Октябрь 22 - по настоящее время',
-          status: 'Frontend-разработчик',
-          resp: 'Sfera',
-        },
-        {
-          company: 'АО "Anotech Energy"',
-          time: 'Май 18 - Март 19',
-          status: 'Ведущий инженер-конструктор',
-          resp: 'Anotech',
+          time: "Октябрь 22 - по настоящее время",
+          status: "Frontend-разработчик",
+          resp: "Sfera",
         },
         {
           company: 'ООО "Вемина Авиапрестиж"',
-          time: 'Апрель 13 - Май 18',
-          status: 'Инженер-конструктор',
-          resp: 'VeminaFirst',
+          time: "Апрель 19 - Январь 20",
+          status: "Главный специалист конструкторского отдела",
+          resp: "VeminaSecond",
+        },
+        {
+          company: 'АО "Anotech Energy"',
+          time: "Май 18 - Март 19",
+          status: "Ведущий инженер-конструктор",
+          resp: "Anotech",
+        },
+        {
+          company: 'ООО "Вемина Авиапрестиж"',
+          time: "Апрель 13 - Май 18",
+          status: "Инженер-конструктор",
+          resp: "VeminaFirst",
         },
         {
           company: 'АО "Прогресстех""',
-          time: 'Июнь 12 - Апрель 13',
-          status: 'Инженер-конструктор',
-          resp: 'Progresstech',
+          time: "Июнь 12 - Апрель 13",
+          status: "Инженер-конструктор",
+          resp: "Progresstech",
         },
       ],
       skills: [
-      { name: 'React.js', percentage: 'skill-80' },
-        { name: 'Redux', percentage: 'skill-80' },
-        { name: 'Next.js', percentage: 'skill-70' },
-        { name: 'HTML5, CSS', percentage: 'skill-90' },
-        { name: 'JavaScript(ES6)', percentage: 'skill-90' },
-        { name: 'Vue.js', percentage: 'skill-60' },
-        { name: 'Git', percentage: 'skill-80' },
-        { name: 'SQL', percentage: 'skill-80' },
-        
+        { name: "React.js", percentage: "skill-80" },
+        { name: "Redux", percentage: "skill-80" },
+        { name: "Next.js", percentage: "skill-70" },
+        { name: "HTML5, CSS", percentage: "skill-90" },
+        { name: "JavaScript(ES6)", percentage: "skill-90" },
+        { name: "TypeScript", percentage: "skill-80" },
+        { name: "Vue.js", percentage: "skill-60" },
+        { name: "Vuex", percentage: "skill-60" },
+        { name: "MongoDB, PostgreSQL, SQLite", percentage: "skill-80" },
+        { name: "Node.js, Express", percentage: "skill-80" },
+        { name: "Strapi CMS", percentage: "skill-90" },
+        { name: "REST API", percentage: "skill-90" },
+        { name: "gRPC", percentage: "skill-90" },
+        { name: "AWS (EC2, RDS, S3)", percentage: "skill-80" },
+        {
+          name: "Google Cloud Platform (App Engine, SQL, Storage)",
+          percentage: "skill-80",
+        },
       ],
-      languages: [{ name: 'English', percentage: 'skill-60' }],
+      languages: [{ name: "English", percentage: "skill-70" }],
       store,
     };
   },

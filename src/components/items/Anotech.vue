@@ -14,8 +14,8 @@
     <h5>Like a Design Engineer:</h5>
     <ul class="resp-list">
       <li>
-        Development of the secondary structure of the Airbus А320 aircraft
-        family. Preparing a documentation package.
+        Development of the secondary structure of the Airbus aircraft family.
+        Preparing a documentation package.
       </li>
     </ul>
   </div>
@@ -41,15 +41,15 @@
     <h5>Как инженер конструктор:</h5>
     <ul class="resp-list">
       <li>
-        Проектная деятельность по вторичной структуре семейства самолётов Airbus
-        А320. Подготовка пакета документов.
+        Проектная деятельность по вторичной структуре семейства самолётов
+        Airbus. Подготовка пакета документов.
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-import store from '../../store';
+import store from "../../store";
 export default {
   data() {
     return {

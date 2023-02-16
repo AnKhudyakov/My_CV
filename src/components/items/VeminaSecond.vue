@@ -2,11 +2,11 @@
   <ul class="resp-list" v-if="$store.state.languages == 'eng'">
     <li>
       Participation in development of technical specification for interior of
-      aircraft Il-96-400;
+      aircraft;
     </li>
     <li>Development of technical specifications for sub-contractors;</li>
     <li>
-      Development nodes for interior of aircraft Il-96-400, preparation and
+      Development nodes for interior of aircraft, preparation and
       design support of production;
     </li>
     <li>Interaction with the customer and sub-contractors;</li>
@@ -16,10 +16,10 @@
     <li>Ensuring an even load of engineers on the project.</li>
   </ul>
   <ul class="resp-list" v-if="$store.state.languages == 'ru'">
-    <li>Участие в разработке ТЗ ОКР на интерьер самолёта Ил-96-400;</li>
+    <li>Участие в разработке ТЗ ОКР на интерьер самолёта;</li>
     <li>Разработка Технического Задания для соисполнителей;</li>
     <li>
-      Разработка узлов интерьера самолёта Ил-96-400 и сопровождение их
+      Разработка узлов интерьера самолёта и сопровождение их
       изготовления на производстве;
     </li>
     <li>Взаимодействие с Заказчиком и подрядными организациями;</li>
